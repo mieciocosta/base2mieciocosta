@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="OficialSuite">
+  <test thread-count="5" parallel="classes" name="Testes Login em backEnd">
+    <classes>
+      <class name="br.com.mantisprova.base2.login.LoginActionBackEnd"/>
+    </classes>
+  </test> <!-- Testes em backEnd -->
+  
+   <test thread-count="5" parallel="classes" name="Testes Chrome em backEnd">
+    <classes>
+      <class name="br.com.mantisprova.base2.actions.back.ReportIssueActionChrome"/>
+    </classes>
+  </test> <!-- Testes em backEnd -->
+  
+   <test thread-count="5" parallel="classes" name="Testes FF em backEnd">
+    <classes>
+      <class name="br.com.mantisprova.base2.actions.back.ReportIssueActionFF"/>
+    </classes>
+  </test> <!-- Testes em backEnd -->
+</suite> <!-- Suite -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-12T14:42:29 BRT" name="OficialSuite" finished-at="2020-10-12T14:43:35 BRT" duration-ms="65645">
+    <groups>
+    </groups>
+    <test started-at="2020-10-12T14:42:29 BRT" name="Testes Login em backEnd" finished-at="2020-10-12T14:42:51 BRT" duration-ms="22015">
+      <class name="br.com.mantisprova.base2.login.LoginActionBackEnd">
+        <test-method is-config="true" signature="startCr()[pri:0, instance:br.com.mantisprova.base2.login.LoginActionBackEnd@45ca843]" started-at="2020-10-12T14:42:29 BRT" name="startCr" finished-at="2020-10-12T14:42:29 BRT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCr -->
+        <test-method is-config="true" signature="startFf()[pri:0, instance:br.com.mantisprova.base2.login.LoginActionBackEnd@45ca843]" started-at="2020-10-12T14:42:29 BRT" name="startFf" finished-at="2020-10-12T14:42:29 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startFf -->
+        <test-method signature="loginChromeBackEnd()[pri:0, instance:br.com.mantisprova.base2.login.LoginActionBackEnd@45ca843]" started-at="2020-10-12T14:42:29 BRT" name="loginChromeBackEnd" finished-at="2020-10-12T14:42:38 BRT" duration-ms="8544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginChromeBackEnd -->
+        <test-method signature="loginFfBackEnd()[pri:0, instance:br.com.mantisprova.base2.login.LoginActionBackEnd@45ca843]" started-at="2020-10-12T14:42:38 BRT" name="loginFfBackEnd" finished-at="2020-10-12T14:42:51 BRT" duration-ms="13421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFfBackEnd -->
+      </class> <!-- br.com.mantisprova.base2.login.LoginActionBackEnd -->
+    </test> <!-- Testes Login em backEnd -->
+    <test started-at="2020-10-12T14:42:51 BRT" name="Testes Chrome em backEnd" finished-at="2020-10-12T14:43:03 BRT" duration-ms="11851">
+      <class name="br.com.mantisprova.base2.actions.back.ReportIssueActionChrome">
+        <test-method is-config="true" signature="start()[pri:0, instance:br.com.mantisprova.base2.actions.back.ReportIssueActionChrome@5136d012]" started-at="2020-10-12T14:42:51 BRT" name="start" finished-at="2020-10-12T14:42:51 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="inserirReportIssueCrm()[pri:0, instance:br.com.mantisprova.base2.actions.back.ReportIssueActionChrome@5136d012]" started-at="2020-10-12T14:42:51 BRT" name="inserirReportIssueCrm" finished-at="2020-10-12T14:43:03 BRT" duration-ms="11844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inserirReportIssueCrm -->
+      </class> <!-- br.com.mantisprova.base2.actions.back.ReportIssueActionChrome -->
+    </test> <!-- Testes Chrome em backEnd -->
+    <test started-at="2020-10-12T14:43:03 BRT" name="Testes FF em backEnd" finished-at="2020-10-12T14:43:35 BRT" duration-ms="31713">
+      <class name="br.com.mantisprova.base2.actions.back.ReportIssueActionFF">
+        <test-method is-config="true" signature="start()[pri:0, instance:br.com.mantisprova.base2.actions.back.ReportIssueActionFF@355ce81c]" started-at="2020-10-12T14:43:03 BRT" name="start" finished-at="2020-10-12T14:43:03 BRT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="inserirReportIssueFF()[pri:0, instance:br.com.mantisprova.base2.actions.back.ReportIssueActionFF@355ce81c]" started-at="2020-10-12T14:43:03 BRT" name="inserirReportIssueFF" finished-at="2020-10-12T14:43:19 BRT" duration-ms="16192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inserirReportIssueFF -->
+        <test-method signature="inserirReportIssueFF()[pri:0, instance:br.com.mantisprova.base2.actions.back.ReportIssueActionFF@355ce81c]" started-at="2020-10-12T14:43:19 BRT" name="inserirReportIssueFF" finished-at="2020-10-12T14:43:35 BRT" duration-ms="15506" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inserirReportIssueFF -->
+      </class> <!-- br.com.mantisprova.base2.actions.back.ReportIssueActionFF -->
+    </test> <!-- Testes FF em backEnd -->
+  </suite> <!-- OficialSuite -->
+</testng-results>
