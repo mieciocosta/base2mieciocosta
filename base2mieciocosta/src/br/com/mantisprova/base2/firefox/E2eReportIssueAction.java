@@ -42,7 +42,7 @@ public class E2eReportIssueAction {
 		WebDriver driver = new ChromeDriver(options);
 		
 		//chamada do método <<login>> da classe <<LoginAction>>
-		br.com.mantisprova.base2.login.LoginActionE2e.login(driver);
+		br.com.mantisprova.base2.utils.SelecionaCombos.selecionaItemCombos(driver);
 		driver.get("https://mantis-prova.base2.com.br/bug_report_page.php");
 
 		// Chama método que preenche os campos de combos aleatoriamente
