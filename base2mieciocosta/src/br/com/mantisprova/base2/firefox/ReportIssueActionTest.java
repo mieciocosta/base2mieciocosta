@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.net.URL;
 import java.io.File;
 import java.net.MalformedURLException;
@@ -48,7 +50,7 @@ public class ReportIssueActionTest {
 		Thread.sleep(2000);
 		
 		// chamada do método <<login>> da classe <<LoginAction>>
-		br.com.mantisprova.base2.utils.E2eLoginAction.login(driver);
+		br.com.mantisprova.base2.utils.LoginAction.login(driver);
 		driver.get("https://mantis-prova.base2.com.br/bug_report_page.php");
 
 		// Chama método que preenche os campos de combos aleatoriamente

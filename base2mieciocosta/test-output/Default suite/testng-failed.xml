@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="br.com.mantisprova.base2.actions.back.ReportIssueAction">
+      <class name="br.com.mantisprova.base2.utils.E2eLoginAction">
         <methods>
-          <include name="startFf"/>
-          <include name="startCr"/>
-          <include name="inserirReportIssueCrm"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- br.com.mantisprova.base2.actions.back.ReportIssueAction -->
+      </class> <!-- br.com.mantisprova.base2.utils.E2eLoginAction -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

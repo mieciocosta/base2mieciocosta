@@ -5,10 +5,10 @@
 
 package br.com.mantisprova.base2.utils;
 
+import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.codec.binary.Base64;
 import org.junit.FixMethodOrder;
-import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,17 +19,12 @@ import org.openqa.selenium.WebDriver;
  */
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class E2eLoginAction {
+public class LoginAction {
 
 	/*
 	 * Criada string para decodificação da senha do usuário. Mais informações em:
 	 * br.com.mantisprova.base2.utils.PasswordEnconding.java
 	 */
-	public static String decodePassword(String passWord) {
-
-		byte[] decodePassword = Base64.decodeBase64(passWord);
-		return new String(decodePassword);
-	}
 
 	// Chamada do teste a ser execucado
 	@Test
@@ -37,7 +32,7 @@ public class E2eLoginAction {
 
 		// chama a url do sistema mantis
 		driver.get("http://mantis-prova.base2.com.br/");
-		driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.SECONDS);
+//		driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.SECONDS);
 
 		// utilização do decodificador de senha
 		String passWord = decodePassword("MjMwNTA3");
@@ -59,4 +54,9 @@ public class E2eLoginAction {
 		br.com.mantisprova.base2.utils.VerificaProjeto.verificaProjeto(driver);
 	}
 
+	public static String decodePassword(String passWord) {
+
+		byte[] decodePassword = Base64.decodeBase64(passWord);
+		return new String(decodePassword);
+	}
 }

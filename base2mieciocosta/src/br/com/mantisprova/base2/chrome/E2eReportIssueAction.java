@@ -8,6 +8,12 @@ package br.com.mantisprova.base2.chrome;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.io.File;
 import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
@@ -28,11 +34,11 @@ public class E2eReportIssueAction {
 	@BeforeClass
 	public static void start() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", File.separator + "home" + File.separator + "miecio"
-				+ File.separator + "eclipse-workspace" + File.separator +"AutoMantis" + File.separator + "jars"+ File.separator + "chromedriver");
+				+ File.separator + "Documentos" + File.separator +"GitHub" + File.separator + "base2mieciocosta"+ File.separator +"base2mieciocosta"+ File.separator + "jars"+ File.separator + "chromedriver");
 	}
 	
 	//Chamada do teste a ser execucado
-	@Test(invocationCount = 2)
+	@Test(invocationCount = 1)
 	public void inserirReportIssue() throws InterruptedException {
 
 		//Definindo o capabilities do chrome a ser executado
@@ -42,7 +48,7 @@ public class E2eReportIssueAction {
 		WebDriver driver = new ChromeDriver(options);
 		
 		//chamada do método <<login>> da classe <<LoginAction>>
-		br.com.mantisprova.base2.utils.E2eLoginAction.login(driver);
+		br.com.mantisprova.base2.utils.LoginAction.login(driver);
 		driver.get("https://mantis-prova.base2.com.br/bug_report_page.php");
 
 		// Chama método que preenche os campos de combos aleatoriamente

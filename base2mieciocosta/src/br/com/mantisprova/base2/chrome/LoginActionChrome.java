@@ -47,7 +47,7 @@ public class LoginActionChrome {
 		Thread.sleep(2000);
 
 		// chamada do método <<login>> da classe <<LoginAction>>
-		br.com.mantisprova.base2.utils.E2eLoginAction.login(driver);
+		br.com.mantisprova.base2.utils.LoginAction.login(driver);
 
 	}
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [e2eSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="e2eTest(failed)">
+    <classes>
+      <class name="br.com.mantisprova.base2.chrome.E2eReportIssueAction">
+        <methods>
+          <include name="inserirReportIssue"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- br.com.mantisprova.base2.chrome.E2eReportIssueAction -->
+      <class name="br.com.mantisprova.base2.utils.E2eLoginAction">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- br.com.mantisprova.base2.utils.E2eLoginAction -->
+      <class name="br.com.mantisprova.base2.firefox.E2eReportIssueAction">
+        <methods>
+          <include name="start"/>
+          <include name="inserirReportIssue"/>
+        </methods>
+      </class> <!-- br.com.mantisprova.base2.firefox.E2eReportIssueAction -->
+    </classes>
+  </test> <!-- e2eTest(failed) -->
+</suite> <!-- Failed suite [e2eSuite] -->

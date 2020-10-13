@@ -8,6 +8,12 @@ package br.com.mantisprova.base2.firefox;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.io.File;
 import org.junit.FixMethodOrder;
 import org.junit.runners.MethodSorters;
@@ -15,6 +21,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  * @version 1.0
@@ -24,25 +31,24 @@ import org.openqa.selenium.chrome.ChromeOptions;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class E2eReportIssueAction {
 
-	//path do chromedriver localizado na máquina
+	// path do chromedriver localizado na máquina
 	@BeforeClass
 	public static void start() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", File.separator + "home" + File.separator + "miecio"
-				+ File.separator + "eclipse-workspace" + File.separator +"AutoMantis" + File.separator + "jars"+ File.separator + "chromedriver");
+		System.setProperty("webdriver.gecko.driver",
+				File.separator + "home" + File.separator + "miecio" + File.separator + "Documentos" + File.separator
+						+ "GitHub" + File.separator + "base2mieciocosta" + File.separator + "base2mieciocosta"
+						+ File.separator + "jars" + File.separator + "geckodriver");
 	}
-	
-	//Chamada do teste a ser execucado
-	@Test(invocationCount = 2)
+
+	// Chamada do teste a ser execucado
+	@Test(invocationCount = 1)
 	public void inserirReportIssue() throws InterruptedException {
 
-		//Definindo o capabilities do chrome a ser executado
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("start-maximized");
-		options.addArguments("disable-infobars");
-		WebDriver driver = new ChromeDriver(options);
-		
-		//chamada do método <<login>> da classe <<LoginAction>>
-		br.com.mantisprova.base2.utils.SelecionaCombos.selecionaItemCombos(driver);
+		// Definindo o capabilities do chrome a ser executado
+		WebDriver driver = new FirefoxDriver();;
+
+		// chamada do método <<login>> da classe <<LoginAction>>
+		br.com.mantisprova.base2.utils.LoginAction.login(driver);
 		driver.get("https://mantis-prova.base2.com.br/bug_report_page.php");
 
 		// Chama método que preenche os campos de combos aleatoriamente
@@ -55,8 +61,10 @@ public class E2eReportIssueAction {
 		driver.findElement(By.name("additional_info")).sendKeys("[SRC_CR] - Teste campo informações adicionais");
 
 		// Click botão submit
-		driver.findElement(By.cssSelector("body > div:nth-child(6) > form > table > tbody > tr:nth-child(15) > td.center > input")).click();
-		
+		driver.findElement(
+				By.cssSelector("body > div:nth-child(6) > form > table > tbody > tr:nth-child(15) > td.center > input"))
+				.click();
+
 		// Fecha a janela do navegador
 		driver.quit();
 

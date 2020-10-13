@@ -3,8 +3,6 @@
 <suite parallel="classes" name="Suite_git">
   <test thread-count="5" parallel="classes" name="Test">
     <classes>
-      <class name="br.com.mantisprova.base2.firefox.LoginActionFirefox"/>
-      <class name="br.com.mantisprova.base2.chrome.LoginActionChrome"/>
       <class name="br.com.mantisprova.base2.chrome.ReportIssueActionTest"/>
       <class name="br.com.mantisprova.base2.firefox.ReportIssueActionTest"/>
     </classes>

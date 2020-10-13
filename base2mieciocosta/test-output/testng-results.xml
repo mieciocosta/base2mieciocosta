@@ -1,55 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-12T21:52:33 BRT" name="Suite_git" finished-at="2020-10-12T21:53:44 BRT" duration-ms="70291">
+  <suite started-at="2020-10-12T22:52:43 BRT" name="Suite_All" finished-at="2020-10-12T22:55:16 BRT" duration-ms="152493">
     <groups>
     </groups>
-    <test started-at="2020-10-12T21:52:33 BRT" name="Test" finished-at="2020-10-12T21:53:44 BRT" duration-ms="70291">
+    <test started-at="2020-10-12T22:52:43 BRT" name="Test_All1" finished-at="2020-10-12T22:53:59 BRT" duration-ms="75794">
       <class name="br.com.mantisprova.base2.firefox.ReportIssueActionTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:br.com.mantisprova.base2.firefox.ReportIssueActionTest@157853da]" started-at="2020-10-12T21:52:33 BRT" name="start" finished-at="2020-10-12T21:52:33 BRT" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:br.com.mantisprova.base2.firefox.ReportIssueActionTest@11c9af63]" started-at="2020-10-12T22:53:23 BRT" name="start" finished-at="2020-10-12T22:53:23 BRT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="inserirReportIssueFF()[pri:0, instance:br.com.mantisprova.base2.firefox.ReportIssueActionTest@157853da]" started-at="2020-10-12T21:52:33 BRT" name="inserirReportIssueFF" finished-at="2020-10-12T21:53:01 BRT" duration-ms="27126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inserirReportIssueFF -->
-        <test-method signature="inserirReportIssueFF()[pri:0, instance:br.com.mantisprova.base2.firefox.ReportIssueActionTest@157853da]" started-at="2020-10-12T21:53:01 BRT" name="inserirReportIssueFF" finished-at="2020-10-12T21:53:44 BRT" duration-ms="43040" status="PASS">
+        <test-method signature="inserirReportIssueFF()[pri:0, instance:br.com.mantisprova.base2.firefox.ReportIssueActionTest@11c9af63]" started-at="2020-10-12T22:53:23 BRT" name="inserirReportIssueFF" finished-at="2020-10-12T22:53:59 BRT" duration-ms="36620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inserirReportIssueFF -->
       </class> <!-- br.com.mantisprova.base2.firefox.ReportIssueActionTest -->
-      <class name="br.com.mantisprova.base2.firefox.LoginActionFirefox">
-        <test-method is-config="true" signature="startFf()[pri:0, instance:br.com.mantisprova.base2.firefox.LoginActionFirefox@28975c28]" started-at="2020-10-12T21:52:33 BRT" name="startFf" finished-at="2020-10-12T21:52:33 BRT" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startFf -->
-        <test-method signature="loginFfBackEnd()[pri:0, instance:br.com.mantisprova.base2.firefox.LoginActionFirefox@28975c28]" started-at="2020-10-12T21:52:33 BRT" name="loginFfBackEnd" finished-at="2020-10-12T21:52:53 BRT" duration-ms="19675" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginFfBackEnd -->
-      </class> <!-- br.com.mantisprova.base2.firefox.LoginActionFirefox -->
-      <class name="br.com.mantisprova.base2.chrome.LoginActionChrome">
-        <test-method is-config="true" signature="startCr()[pri:0, instance:br.com.mantisprova.base2.chrome.LoginActionChrome@3943a2be]" started-at="2020-10-12T21:52:33 BRT" name="startCr" finished-at="2020-10-12T21:52:33 BRT" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startCr -->
-        <test-method signature="loginChromeBackEnd()[pri:0, instance:br.com.mantisprova.base2.chrome.LoginActionChrome@3943a2be]" started-at="2020-10-12T21:52:33 BRT" name="loginChromeBackEnd" finished-at="2020-10-12T21:52:44 BRT" duration-ms="10847" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginChromeBackEnd -->
-      </class> <!-- br.com.mantisprova.base2.chrome.LoginActionChrome -->
       <class name="br.com.mantisprova.base2.chrome.ReportIssueActionTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:br.com.mantisprova.base2.chrome.ReportIssueActionTest@343570b7]" started-at="2020-10-12T21:52:33 BRT" name="start" finished-at="2020-10-12T21:52:33 BRT" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:br.com.mantisprova.base2.chrome.ReportIssueActionTest@45ca843]" started-at="2020-10-12T22:52:43 BRT" name="start" finished-at="2020-10-12T22:52:43 BRT" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="inserirReportIssueCrm()[pri:0, instance:br.com.mantisprova.base2.chrome.ReportIssueActionTest@343570b7]" started-at="2020-10-12T21:52:33 BRT" name="inserirReportIssueCrm" finished-at="2020-10-12T21:52:52 BRT" duration-ms="18289" status="PASS">
+        <test-method signature="inserirReportIssueCrm()[pri:0, instance:br.com.mantisprova.base2.chrome.ReportIssueActionTest@45ca843]" started-at="2020-10-12T22:52:43 BRT" name="inserirReportIssueCrm" finished-at="2020-10-12T22:53:22 BRT" duration-ms="39044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inserirReportIssueCrm -->
       </class> <!-- br.com.mantisprova.base2.chrome.ReportIssueActionTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite_git -->
+    </test> <!-- Test_All1 -->
+    <test started-at="2020-10-12T22:54:00 BRT" name="Test_All2" finished-at="2020-10-12T22:55:16 BRT" duration-ms="76335">
+      <class name="br.com.mantisprova.base2.firefox.E2eReportIssueAction">
+        <test-method signature="inserirReportIssue()[pri:0, instance:br.com.mantisprova.base2.firefox.E2eReportIssueAction@e1de817]" started-at="2020-10-12T22:54:40 BRT" name="inserirReportIssue" finished-at="2020-10-12T22:55:16 BRT" duration-ms="35435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inserirReportIssue -->
+        <test-method is-config="true" signature="start()[pri:0, instance:br.com.mantisprova.base2.firefox.E2eReportIssueAction@e1de817]" started-at="2020-10-12T22:54:40 BRT" name="start" finished-at="2020-10-12T22:54:40 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+      </class> <!-- br.com.mantisprova.base2.firefox.E2eReportIssueAction -->
+      <class name="br.com.mantisprova.base2.chrome.E2eReportIssueAction">
+        <test-method is-config="true" signature="start()[pri:0, instance:br.com.mantisprova.base2.chrome.E2eReportIssueAction@5939a379]" started-at="2020-10-12T22:54:00 BRT" name="start" finished-at="2020-10-12T22:54:00 BRT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method signature="inserirReportIssue()[pri:0, instance:br.com.mantisprova.base2.chrome.E2eReportIssueAction@5939a379]" started-at="2020-10-12T22:54:00 BRT" name="inserirReportIssue" finished-at="2020-10-12T22:54:40 BRT" duration-ms="40892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inserirReportIssue -->
+      </class> <!-- br.com.mantisprova.base2.chrome.E2eReportIssueAction -->
+    </test> <!-- Test_All2 -->
+  </suite> <!-- Suite_All -->
 </testng-results>

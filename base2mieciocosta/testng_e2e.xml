@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="e2eSuite">
+  <test thread-count="5" parallel="classes" name="e2eTest">
+    <classes>
+      <class name="br.com.mantisprova.base2.chrome.E2eReportIssueAction"/>
+      <class name="br.com.mantisprova.base2.firefox.E2eReportIssueAction"/>
+    </classes>
+  </test> <!-- e2eTest -->
+</suite> <!-- e2eSuite -->
