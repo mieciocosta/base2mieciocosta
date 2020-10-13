@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite_All" class="navigator-link">
-              <span class="suite-name border-passed">Suite_All</span>
+              <span class="suite-name border-failed">Suite_All</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite_All" class="hide-methods failed suite-Suite_All"> (hide)</a> <!-- hide-methods failed suite-Suite_All -->
+                      <a href="#" panel-name="suite-Suite_All" class="show-methods failed suite-Suite_All"> (show)</a> <!-- show-methods failed suite-Suite_All -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite_All">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite_All" title="br.com.mantisprova.base2.firefox.E2eReportIssueAction" class="method navigator-link" hash-for-method="inserirReportIssue">inserirReportIssue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite_All -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +116,6 @@
                       <a href="#" panel-name="suite-Suite_All" class="show-methods passed suite-Suite_All"> (show)</a> <!-- show-methods passed suite-Suite_All -->
                     </span>
                     <div class="method-list-content passed suite-Suite_All">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite_All" title="br.com.mantisprova.base2.firefox.E2eReportIssueAction" class="method navigator-link" hash-for-method="inserirReportIssue">inserirReportIssue</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite_All" title="br.com.mantisprova.base2.chrome.E2eReportIssueAction" class="method navigator-link" hash-for-method="inserirReportIssue">inserirReportIssue</a> <!-- method navigator-link -->
@@ -134,9 +143,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite_All" class="panel Suite_All">
-          <div class="suite-Suite_All-class-passed">
+          <div class="suite-Suite_All-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">br.com.mantisprova.base2.firefox.E2eReportIssueAction</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -145,6 +154,40 @@
                   <a name="inserirReportIssue">
                   </a> <!-- inserirReportIssue -->
                   <span class="method-name">inserirReportIssue</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timeout loading page after 2000ms
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;miecio-Vostro-5470&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.4.0-48-generic&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 444619, moz:profile: /tmp/rust_mozprofileTjLg85, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.4.0-48-generic, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c2ecb3e7-36fb-4bb8-a2cf-e28f82ccfe7c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at br.com.mantisprova.base2.firefox.E2eReportIssueAction.inserirReportIssue(E2eReportIssueAction.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite_All-class-failed -->
+          <div class="suite-Suite_All-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">br.com.mantisprova.base2.firefox.ReportIssueActionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inserirReportIssueFF">
+                  </a> <!-- inserirReportIssueFF -->
+                  <span class="method-name">inserirReportIssueFF</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,21 +203,6 @@
                   <a name="inserirReportIssue">
                   </a> <!-- inserirReportIssue -->
                   <span class="method-name">inserirReportIssue</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite_All-class-passed -->
-          <div class="suite-Suite_All-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">br.com.mantisprova.base2.firefox.ReportIssueActionTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="inserirReportIssueFF">
-                  </a> <!-- inserirReportIssueFF -->
-                  <span class="method-name">inserirReportIssueFF</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -258,21 +286,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'inserirReportIssue')
-data.setCell(0, 2, 'br.com.mantisprova.base2.chrome.E2eReportIssueAction')
-data.setCell(0, 3, 40892);
+data.setCell(0, 1, 'inserirReportIssueFF')
+data.setCell(0, 2, 'br.com.mantisprova.base2.firefox.ReportIssueActionTest')
+data.setCell(0, 3, 47933);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'inserirReportIssueCrm')
 data.setCell(1, 2, 'br.com.mantisprova.base2.chrome.ReportIssueActionTest')
-data.setCell(1, 3, 39044);
+data.setCell(1, 3, 37113);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'inserirReportIssueFF')
-data.setCell(2, 2, 'br.com.mantisprova.base2.firefox.ReportIssueActionTest')
-data.setCell(2, 3, 36620);
+data.setCell(2, 1, 'inserirReportIssue')
+data.setCell(2, 2, 'br.com.mantisprova.base2.firefox.E2eReportIssueAction')
+data.setCell(2, 3, 35645);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'inserirReportIssue')
-data.setCell(3, 2, 'br.com.mantisprova.base2.firefox.E2eReportIssueAction')
-data.setCell(3, 3, 35435);
+data.setCell(3, 2, 'br.com.mantisprova.base2.chrome.E2eReportIssueAction')
+data.setCell(3, 3, 26027);
 window.suiteTableData['Suite_All']= { tableData: data, tableDiv: 'times-div-Suite_All'}
 return data;
 }
@@ -310,40 +338,42 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">inserirReportIssueCrm</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">39 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.mantisprova.base2.firefox.ReportIssueActionTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">39100 ms</span>
+                <span class="method-start">37263 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">inserirReportIssueFF</span>
-                <span class="method-start">39101 ms</span>
+                <span class="method-start">37264 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.mantisprova.base2.chrome.E2eReportIssueAction</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">76089 ms</span>
+                <span class="method-start">85409 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">inserirReportIssue</span>
-                <span class="method-start">76090 ms</span>
+                <span class="method-start">85409 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">br.com.mantisprova.base2.firefox.E2eReportIssueAction</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">start</span>
-                <span class="method-start">116984 ms</span>
+                <span class="method-start">111438 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">inserirReportIssue</span>
-                <span class="method-start">116984 ms</span>
+                <span class="method-start">111439 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
