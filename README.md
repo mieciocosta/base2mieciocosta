@@ -28,7 +28,7 @@ USe o comando `docker-compose up -d` para iniciar.
 
 Tudo ok, agora é acessar o selenium grid : http://localhost:4444/grid/console.
 
-> Verificar o arquivo [docker-compose.yml](docker-compose.yml) para as configurações.
+> Verificar o arquivo (base2mieciocosta/docker-compose.yml) para as configurações.
 
 ## Allure Report
 
