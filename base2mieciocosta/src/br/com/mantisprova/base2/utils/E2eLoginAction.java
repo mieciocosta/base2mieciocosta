@@ -3,7 +3,7 @@
  * essa classe é reutilizada por outras classes no projeto.
  */
 
-package br.com.mantisprova.base2.login;
+package br.com.mantisprova.base2.utils;
 
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.codec.binary.Base64;
@@ -19,7 +19,7 @@ import org.openqa.selenium.WebDriver;
  */
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class LoginActionE2e {
+public class E2eLoginAction {
 
 	/*
 	 * Criada string para decodificação da senha do usuário. Mais informações em:

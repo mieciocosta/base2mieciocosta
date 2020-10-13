@@ -7,12 +7,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/home/miecio/eclipse-workspace/AutoMantis/jars/selenium-server-standalone-3.141.59.jar"/>
-	<classpathentry kind="lib" path="/home/miecio/eclipse-workspace/AutoMantis/jars/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="/home/miecio/eclipse-workspace/AutoMantis/jars/commons-codec-1.15-test-sources.jar"/>
-	<classpathentry kind="lib" path="/home/miecio/eclipse-workspace/AutoMantis/jars/commons-codec-1.15-tests.jar"/>
-	<classpathentry kind="lib" path="/home/miecio/eclipse-workspace/AutoMantis/jars/commons-codec-1.15-sources.jar"/>
-	<classpathentry kind="lib" path="/home/miecio/eclipse-workspace/AutoMantis/jars/commons-codec-1.15-javadoc.jar"/>
-	<classpathentry kind="lib" path="/home/miecio/eclipse-workspace/AutoMantis/jars/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="jars/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="jars/commons-codec-1.15-javadoc.jar"/>
+	<classpathentry kind="lib" path="jars/commons-codec-1.15-sources.jar"/>
+	<classpathentry kind="lib" path="jars/commons-codec-1.15-tests.jar"/>
+	<classpathentry kind="lib" path="jars/commons-codec-1.15-test-sources.jar"/>
+	<classpathentry kind="lib" path="jars/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="jars/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

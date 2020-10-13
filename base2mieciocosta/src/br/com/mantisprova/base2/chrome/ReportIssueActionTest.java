@@ -1,10 +1,13 @@
+
 /*
  * Classe ReportIssueActionChrome responsável pelas ações do chrome na tela <<bug_report_page.php>>
  * realizadas sem necessidade de execução do browser 
  * Essa classe pode ser executada pelo TestNG tanto pelo próprio arquivo quando pelo testng_mantis.xml
  */
-package br.com.mantisprova.base2.actions.back;
+package br.com.mantisprova.base2.chrome;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import java.io.File;
@@ -24,7 +27,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
  */
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ReportIssueActionChrome {
+public class ReportIssueActionTest {
 
 	// path do chromedriver localizado na máquina
 	@BeforeClass
@@ -45,7 +48,7 @@ public class ReportIssueActionChrome {
 		Thread.sleep(2000);
 		
 		// chamada do método <<login>> da classe <<LoginAction>>
-		br.com.mantisprova.base2.login.LoginActionE2e.login(driver);
+		br.com.mantisprova.base2.utils.E2eLoginAction.login(driver);
 		driver.get("https://mantis-prova.base2.com.br/bug_report_page.php");
 
 		// Chama método que preenche os campos de combos aleatoriamente

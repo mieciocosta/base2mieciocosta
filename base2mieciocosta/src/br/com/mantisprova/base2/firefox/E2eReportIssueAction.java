@@ -4,7 +4,7 @@
  * Essa classe pode ser executada pelo TestNG tanto pelo próprio arquivo quando pelo testng_mantis.xml
  */
 
-package br.com.mantisprova.base2.actions.e2e;
+package br.com.mantisprova.base2.firefox;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
@@ -22,7 +22,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
  */
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class ReportIssueActionChrome {
+public class E2eReportIssueAction {
 
 	//path do chromedriver localizado na máquina
 	@BeforeClass
